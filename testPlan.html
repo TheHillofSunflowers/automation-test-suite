@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Test Plan</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <h1><strong>Software Testing Automation</strong></h1>
+        <div>
+            <p>
+                The following is an automated test suite for the <a href="https://practice.sdetunicorns.com/" target="_blank">practice SDET-Unicorns website</a>.
+                Written in JavaScript with WebdriverIO, it serves as a smoke test for the different pages that are available on the top menu bar.
+            </p>
+            <p>
+                Home.js is a test to assert that the homepage has the correct title of "Practice E-Commerce Site – SDET Unicorns."
+            </p>
+            <p>
+                About.js tests the about page by ensuring that it has the intended URL of the about page.
+            </p>
+            <p>
+                Contact.js verifies the contact form functionality by opening the contact page, filling in the contact form provided with
+                randomized data, and submitting the info by clicking the submit button. Following this, it asserts whether a proper success alert is sent or not.
+            </p>
+            <p>
+                Blog.js opens the blog page and checks if each item in the recent posts list has a length of at least 10 characters. Then, it tests
+                for the amount of items that are listed and passes if there is the intended amount of five items.
+            </p>
+            <p>
+                The gettingStarted.js test case clicks the "Get Started" button on the homepage, and asserts that the URL includes "get-started"
+                in it afterwards. It then clicks on the logo of the website, and checks to see if the URL does not contain "get-started" anymore.
+            </p>
+            <p>
+                To assist with the programming of these automated tests, the page-object model is used for the home-page, contact-page, and
+                blog-page. These allow for better code readability within the test scripts and ease of use in the testing framework.
+            </p>
+            <p>
+                To run the test suite, open the terminal and type "npx wdio --suite smoke". To run all tests, type "npx wdio". In addition,
+                there is a test suite to test all the scripts intended for the different pages, which can be run with "npx wdio --suite pages".
+            </p>
+        </div>
+
+    </body>
+</html>
